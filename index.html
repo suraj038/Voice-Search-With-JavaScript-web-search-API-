@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Voice Search With JavaScript</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <video autoplay muted loop id="myVideo">
+            <source src="park.mp4" type="video/mp4">
+          </video>
+        <form action="https://www.google.com/search" method="get" target="_blank" id="search-form">
+          <input name="q" type="text" placeholder="Search Google..." autocomplete="off" autofocus>
+          <!-- <button type="button"><i class="fa fa-microphone" style="color:red"></i></button> -->
+        </form>
+        <p class="info"></p>
+      </div>
+      <div class="content">
+        <h1><b>Google Search With Voice</b></h1>
+        <p>Search anything you like using voice search</br>
+            Click on pause to stop the video
+        </p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+</body>
+</html>
